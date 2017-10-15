@@ -109,7 +109,7 @@ describe('combinations', () => {
         const changed = () => {
           const comp = render();
           comp.find(DummyInput).props().onChange('invalid');
-          return comp;
+          return comp.update();
         };
 
         it('has the right value', () => {
@@ -134,7 +134,7 @@ describe('combinations', () => {
           const blurred = () => {
             const comp = changed();
             comp.find(DummyInput).props().onBlur();
-            return comp;
+            return comp.update();
           };
 
           it('has the right value', () => {
@@ -182,7 +182,7 @@ describe('combinations', () => {
         const changed = () => {
           const comp = render();
           comp.find(DummyInput).props().onChange('valid');
-          return comp;
+          return comp.update();
         };
 
         it('has the right value', () => {
@@ -207,7 +207,7 @@ describe('combinations', () => {
           const blurred = () => {
             const comp = changed();
             comp.find(DummyInput).props().onBlur();
-            return comp;
+            return comp.update();
           };
 
           it('has the right value', () => {
@@ -279,7 +279,7 @@ describe('combinations', () => {
                 validate: ({ test }) => (test === 'other' ? { test: 'suddenly invalid' } : {}),
               };
               comp.setProps(props);
-              return comp;
+              return comp.update();
             };
 
             it('has an error', () => {
@@ -306,7 +306,7 @@ describe('combinations', () => {
             ...comp.props(),
             value: { test: 'invalid' },
           });
-          return comp;
+          return comp.update();
         };
 
         it('has the right value', () => {
@@ -326,7 +326,7 @@ describe('combinations', () => {
           const blurred = () => {
             const comp = changed();
             comp.find(DummyInput).props().onBlur();
-            return comp;
+            return comp.update();
           };
 
           it('has the right value', () => {
@@ -392,7 +392,7 @@ describe('combinations', () => {
           const blurred = () => {
             const comp = changed();
             comp.find(DummyInput).props().onBlur();
-            return comp;
+            return comp.update();
           };
 
           it('has the right value', () => {

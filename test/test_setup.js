@@ -1,3 +1,5 @@
+import Adapter from 'enzyme-adapter-react-16';
+import Enzyme from 'enzyme';
 import { jsdom } from 'jsdom';
 
 const exposedProperties = ['window', 'navigator', 'document'];
@@ -14,3 +16,5 @@ Object.keys(document.defaultView).forEach((property) => {
 global.navigator = {
   userAgent: 'node.js',
 };
+
+Enzyme.configure({ adapter: new Adapter() });
