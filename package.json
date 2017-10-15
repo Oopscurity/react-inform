@@ -1,11 +1,11 @@
 {
-  "name": "react-inform",
-  "version": "0.2.2",
+  "name": "@oopscurity/react-inform",
+  "version": "0.2.3",
   "description": "Simple controlled forms with validations in react",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/theadam/react-inform.git"
+    "url": "https://github.com/Oopscurity/react-inform.git"
   },
   "keywords": [
     "react",
