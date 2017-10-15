@@ -65,7 +65,7 @@
     "webpack": "^1.13.1"
   },
   "peerDependencies": {
-    "react": "^0.14.7 || ^15.0.0"
+    "react": "^0.14.7 || ^15.0.0 || ^16.0.0"
   },
   "dependencies": {
     "prop-types": "^15.6.0"
